@@ -1,4 +1,4 @@
-# dotenv@v2
+# dotenv@v2.1.0
 > GitHub Action to read .env file and add variables to GITHUB_ENV
 
 ## 🔥 Usage
@@ -28,7 +28,7 @@
 |----------|:----------:|:-------:|----------------------------------------------------|:--------:
 | `path` |     x      | ./      | path to the folder where the .env file is located. | ./custom/path/to/folder/with/env
 | `mode`   |     x      | `empty` | mode for loading the .env file.                       | test
-| `load-mode` |    x    | `strict` | sets whether the program should fail when the .env file is not present (`strict`) or continue (`skip`) | skip|
+| `load-mode` |    x    | `strict` | sets whether the program should fail when the .env file is not present (`strict`) or continue (`skip`) | skip |
 
 ## 🧩 Notes
 This action is built on top of the [dotenv](https://github.com/motdotla/dotenv) library.
@@ -42,4 +42,4 @@ Thus, specifying `mode: test` will read the `.env.test` file. `mode: development
 
 After reading and parsing the variables from the `.env` file, it writes them to `GITHUB_ENV`.
 
-If the action should continue when the .env file is not present, the optional `load-mode` flag can be set to `skip`. This can be particularly, for example, useful in secondary branches, where some aspects of the action may not be relevant.
+If the action should continue when the `.env` file is not present, the optional `load-mode` flag can be set to `skip`. This can be particularly, for example, useful in secondary branches, where some aspects of the action may not be relevant.
